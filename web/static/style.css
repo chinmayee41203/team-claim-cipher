@@ -236,3 +236,9 @@ pre.json { font-size: 12px; background: var(--surface-2); padding: 10px; border-
   .row.new, .page.on { animation: none; }
   .drawer, .scrim, .toast, .moment { transition: none; }
 }
+
+/* Public view (any host but localhost, see config.js): demo-control buttons hidden */
+html.public-view #btn-reset,
+html.public-view #btn-policy,
+html.public-view #btn-approve-all,
+html.public-view [data-approve] { display: none !important; }
